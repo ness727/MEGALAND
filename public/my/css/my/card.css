@@ -1,0 +1,68 @@
+.card-container .card {
+
+  position: absolute;
+  
+  left: 50%;
+  transition: all 0.8s ease-in-out;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  
+  cursor: pointer;
+}
+@media screen and (max-width:650px){
+  div.card {
+    width:30vw !important;
+    height:35vh !important;
+  }
+}
+.card-container .card:first-child {
+  transform: translate(-50%, -50%) rotate(10deg);
+  background: url(https://static.vecteezy.com/system/resources/previews/001/594/577/non_2x/blue-purple-gradient-geometric-shape-free-vector.jpg)
+    center;
+  background-size: cover;
+}
+.card-container .card:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(5deg);
+  background: url(https://static.vecteezy.com/system/resources/previews/002/072/308/non_2x/abstract-wavy-gradient-background-free-vector.jpg)
+    center;
+  background-size: cover;
+}
+.card-container .card:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-5deg);
+  background: url(https://static.vecteezy.com/system/resources/previews/004/338/513/non_2x/abstract-fluid-shape-background-gradient-dynamic-orange-and-yellow-vector.jpg)
+    center;
+  background-size: cover;
+}
+.card-container .card:last-child {
+  transform: translate(-50%, -50%) rotate(-10deg);
+  background: url(https://static.vecteezy.com/system/resources/previews/002/836/814/non_2x/blue-purple-absract-geometri-gradient-background-free-vector.jpg)
+    center;
+  background-size: cover;
+}
+.card-container:hover .card {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.card-container {
+	margin-top: 150px;
+	margin-bottom: 100px;
+	height: 200px;
+}
+
+.card > div > img {
+	width: 30%; 
+	height: 30%; 
+	margin: 30px;
+}
+
+.card > div > p {
+	margin: 20px;
+}
+
+.card {
+	-webkit-text-stroke: 0.5px #041858;
+}

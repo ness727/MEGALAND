@@ -1,0 +1,100 @@
+@font-face {
+  font-family : "g_medium";
+  src : url("../../webfonts/g_medium.ttf");
+  font-size: 4em !important;
+}
+
+@font-face {
+  font-family: "g_bold";
+  src: url("../../webfonts/g_bold.ttf");
+}
+
+body {
+	font-family: 'g_medium';
+	font-size: 1.2rem;
+}
+
+.footer_bg {
+	padding-top: 16vh !important;
+}
+
+.my_align {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.my_font_background  {
+  /*  leverage cascade for cross-browser gradients  */
+  background: radial-gradient(
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%) 
+  ) fixed;
+  background: conic-gradient(
+    hsl(256, 87%, 50%), 
+    hsl(0 93% 70%), 
+    hsl(256, 87%, 50%)
+  ) fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.my_table_color {
+	background-color: #eeeeee !important;
+	color: #041858 !important;
+	font-weight: bold;
+}
+
+.my_button {
+	background-color: #041858;
+	border-color: #041858;
+}
+
+.radius_top_left {
+	border-top-left-radius: 1.5rem;
+}
+
+.radius_top_right {
+	border-top-right-radius: 1.5rem;
+}
+
+.radius_bottom_left {
+	border-bottom-left-radius: 1.5rem;
+}
+
+.radius_bottom_right {
+	border-bottom-right-radius: 1.5rem;
+}
+
+.input_top_right {
+	border-top-right-radius: 1.5rem;
+}
+
+.input_bottom_right {
+	border-bottom-right-radius: 1.5rem;
+}
+
+.login {
+    margin-left: 50px;
+}
+
+@media (max-width: 992px) {
+    .login {
+		margin-left: 0px;
+        padding-left: 0px;
+    }
+}
+
+.my_container {
+	width: 60% !important;
+	border-radius: 1.5rem !important;
+}
+
+.main_theme_color {
+	color: #041858;
+}
+
+.button_radius {
+	border-radius: 0.7rem;
+}
